@@ -1,5 +1,5 @@
 # Assignment 1 - Scan and read outlook email content
-
+In this assignment you are going to create an SAP iRPA project that scans your outlook for an email with a specific email subject. The content from this email will then be captured and displayed in a popup window.
 
 At the end of this exercise we want to achieve the following result:
 ![Project test result](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/blob/master/img/1_Test_Result.png)
@@ -39,48 +39,45 @@ We will abuse the popup script to add additional logic. Add the code below to th
 ![Edit script](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/blob/master/img/1_Edit_Script.png)
 
 ```javascript
-	// Scan and Read Email
-  var mails = [];
-  var i = 0;
-	var message = "";
-	var mailBody = "";
-	
-	ctx.log("Start Email Scan");
-	
-  ctx.outlook.init();
-  ctx.outlook.mail.resetMailCollection();
-  ctx.outlook.mail.searchByCriteria( { subject: "testing123", dontThrowExceptionIfNoMailFound: true });
-	mails = ctx.outlook.mail.getFilteredTable();
-	if (mails.length) {
-		ctx.each(mails,function(index,mail) {
-			
-			// Retrieve email
-			ctx.outlook.mail.retrieveMail( {
-				EntryID : mail.EntryID, 
-				StoreID : mail.StoreID
-			});
-			
-			// Fetch and log email body
-			mailBody = ctx.outlook.mail.getBody(index);
-			ctx.log(mailBody);
-			
+// Scan and Read Email
+var mails = [];
+var i = 0;
+var message = "";
+var mailBody = "";
+ctx.log("Start Email Scan");
+// Init outlook library
+ctx.outlook.init();
+ctx.outlook.mail.resetMailCollection();
+// Search emails by subject
+ctx.outlook.mail.searchByCriteria( { subject: "testing123", dontThrowExceptionIfNoMailFound: true });
+mails = ctx.outlook.mail.getFilteredTable();
+if (mails.length) {
+	ctx.each(mails,function(index,mail) {
+		// Retrieve email
+		ctx.outlook.mail.retrieveMail( {
+			EntryID : mail.EntryID, 
+			StoreID : mail.StoreID
 		});
-		
-		message = mailBody;
-		
-		// If email was read & processed, I want to move it to a specific folder, but thats not working :( 
-		//ctx.outlook.mail.moveToSpecificStore(0, 'iemke.kooijman@innov8ion.nl', 'Inbox\\test');
-		
-	} else {
-		message = 'Mail not found :('; 
-	}
-	ctx.outlook.end();
-	ctx.log("End Email Scan");
+		// Fetch and log email body
+		mailBody = ctx.outlook.mail.getBody(index);
+		ctx.log(mailBody);
+	});
+	message = mailBody;
+	// If email was read & processed, I want to move it to a specific folder, but thats not working :( 
+	//ctx.outlook.mail.moveToSpecificStore(0, 'iemke.kooijman@innov8ion.nl', 'Inbox\\test');
+} else {
+	message = 'Mail not found :('; 
+}
+ctx.outlook.end();
+ctx.log("End Email Scan");
 ```
 
 #### Step 7: Run & test project
-Now everything is in place to run a test. Press Debug button on the icon bar. This will open & load the project in the Desktop Debugger. Wait untill the project is running. Now go to your windows taskbar and click the Desktop Agent icon. Click your workflow name in the list. This will run the project. 
+Now everything is in place to run a test. Press the Debug button on the icon bar. This will open & load the project in the Desktop Debugger. Wait untill the project is running. Now go to your windows taskbar and click the Desktop Agent icon. Click your workflow name in the list. This will run the project. A popup should appear with the email content in it.
 
 ![Run and test](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/blob/master/img/1_Run_and_Test_Project.png)
 
 #### Step 8: Open the log that was generated for the run
+In the javascript code that was added, a few ctx.log commands are present. If something is logged, a log file will be created when running the project in debug mode. You can find the generated log file in your project folder. Find it now and run it. This will open another Desktop Studio instance and show you everything that was logged during the execution of the project.
+
+![Logging](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/blob/master/img/1_Debug_Logs.png)
