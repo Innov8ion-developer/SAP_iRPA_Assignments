@@ -29,7 +29,7 @@ In this assignment we want to show a popup to the user with the content of a spe
 #### Step 5: Popup details
 Select the msgbox element you just created. Now in the upper right part of the screen, fill some details regarding the popup element.
 
-![Build project](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/blob/master/img/1_Popup_Details_and_Build.png)
+![Build project](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/blob/master/img/1_Popup_Details.png)
 
 #### Step 6: Edit popup script
 Go to the Scripts tab. If the build was succesful, an entry should be visible for the workflow you have created. Double click the entry for your worflow. This will open the scripts related to it. For this assignment, it means there was a script generated to display the msgbox.
