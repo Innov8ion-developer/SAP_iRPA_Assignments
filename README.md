@@ -36,6 +36,8 @@ Go to the Scripts tab. If the build was succesful, an entry should be visible fo
 
 We will abuse the popup script to add additional logic. Add the code below to the script on the highlighted position and save it.
 
+Also replace the fixed text from the popup with the newly introduced message variable.
+
 ![Edit script](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/blob/master/img/1_Edit_Script.png)
 
 ```javascript
