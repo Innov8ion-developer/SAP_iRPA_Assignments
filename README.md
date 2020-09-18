@@ -44,7 +44,7 @@ Also replace the fixed text from the popup with the newly introduced message var
 #### Step 6: Run & test project
 Now everything is in place to run a test. Press the Debug button on the icon bar. This will open & load the project in the Desktop Debugger. Wait untill the project is running. Now go to your windows taskbar and click the Desktop Agent icon. Click your workflow name in the list. This will run the project. A popup should appear with the KVK details in it.
 
-![Run & test project](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/blob/master/img/1_Build_Run_and_Test_Project.png)
+![Run & test project](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/blob/master/img/1_Run_and_Test_Project.png)
 
 #### Step 7: Open the log that was generated for the run
 Open the log that was generated for the run similar to assignment #1
