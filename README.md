@@ -32,6 +32,8 @@ Now press the Build icon in the icon bar. This will generate the scripts and obj
 ![Add Msgbox element](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/blob/master/img/2_Add_Msgbox_and_Details.png)
 
 #### Step 5: Edit scripts
+The build may have caused some errors due to some incorrect variables. Fix the errors first before you continue.
+
 Go to the Scripts tab. If the build was succesful, an entry should be visible for the workflow you have created. Double click the entry for your worflow. This will open the scripts related to it. For this assignment, it means there was a script generated to call the web service and display the msgbox.
 
 We will adjust the web service script to store the received data in the GLOBAL variable and the popup script to display the stored data from the GLOBAL variable. Add the highlighted code below to the scripts and save it.
