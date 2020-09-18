@@ -27,7 +27,7 @@ In this assignment we want to show a popup to the user with the content of a spe
 ![Add popup](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/blob/master/img/1_Add_Popup.png)
 
 #### Step 5: Popup details
-Select the msgbox element you just created. Now in the upper right part of the screen, fill some details regarding the popup element. Next, press the Build button in the icon bar. This will generate the scripts for all the objects in the project.
+Select the msgbox element you just created. Now in the upper right part of the screen, fill some details regarding the popup element.
 
 ![Build project](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/blob/master/img/1_Popup_Details_and_Build.png)
 
@@ -75,6 +75,8 @@ ctx.log("End Email Scan");
 ```
 
 #### Step 7: Build, run & test project
+First, press the Build button in the icon bar. This will generate all the objects required to run the project.
+
 Now everything is in place to run a test. Press the Debug button on the icon bar. This will open & load the project in the Desktop Debugger. Wait untill the project is running. Now go to your windows taskbar and click the Desktop Agent icon. Click your workflow name in the list. This will run the project. A popup should appear with the email content in it.
 
 ![Run and test](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/blob/master/img/1_Run_and_Test_Project.png)
