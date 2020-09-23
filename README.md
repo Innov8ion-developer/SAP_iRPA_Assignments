@@ -48,5 +48,5 @@ Add the click activity to the create button in the same way as you did in step 7
 Now everything is in place to run a test. Press the Debug button on the icon bar. This will open & load the project in the Desktop Debugger. Wait untill the project is running. Now go to your windows taskbar and click the Desktop Agent icon. Click your workflow name in the list. This will run the project. The SAP Fiori Launchpad should appear and the Supplier Master app should be started and the create button should be pressed.
 
 #### Next steps
-The last step was not working for me. Can you make it work?
+The last step was not working for me. Can you make it work? If you can, continue adding pages & clicks & fill out input fields. Eventually you can press save and the supplier will be created. This concludes the process.
 
