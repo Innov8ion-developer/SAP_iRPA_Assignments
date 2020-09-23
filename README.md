@@ -17,4 +17,4 @@ To save costs, free up time for more important tasks and reduce data input error
 #### Assignments
 This repository has a few branches. Every branch is an assignment you can do seperately. However, the best idea would be to combine the assignments to create a complete flow of the components above. This means you have to tweak the assignments to make them flow into eachother smoothly.
 
-[Go to Assignment 1](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/tree/1_Scan_and_Read_Email)
+[Go to Assignment 1](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/tree/1_Scan_and_Read_Email/README.md)
