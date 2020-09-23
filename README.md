@@ -51,5 +51,5 @@ Now everything is in place to run a test. Press the Debug button on the icon bar
 The last step was not working for me. Can you make it work? If you can, continue adding pages & clicks & fill out input fields. Eventually you can press save and the supplier will be created. This concludes the process.
 
 #### Want to deploy your project to SAP Cloud Platform?
-[Go to Assignment 4](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/tree/4_Deploying_to_SCP)
+[Go to Assignment 4](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/tree/4_Deploying_to_SCP/README.md)
 
