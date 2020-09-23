@@ -51,4 +51,4 @@ Now everything is in place to run a test. Press the Debug button on the icon bar
 #### Step 7: Open the log that was generated for the run
 Open the log that was generated for the run similar to assignment #1
 
-[Go to Assignment 3](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/tree/3_Create_Supplier_in_Fiori_App)
+[Go to Assignment 3](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/tree/3_Create_Supplier_in_Fiori_App/README.md)
