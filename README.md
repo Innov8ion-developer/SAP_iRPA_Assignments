@@ -86,4 +86,4 @@ In the javascript code that was added, a few ctx.log commands are present. If so
 
 ![Logging](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/blob/master/img/1_Debug_Logs.png)
 
-[Go to Assignment 2](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/tree/2_Read_KVK_API_Details)
+[Go to Assignment 2](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/tree/2_Read_KVK_API_Details/README.md)
