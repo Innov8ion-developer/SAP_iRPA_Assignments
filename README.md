@@ -85,3 +85,5 @@ Now everything is in place to run a test. Press the Debug button on the icon bar
 In the javascript code that was added, a few ctx.log commands are present. If something is logged, a log file will be created when running the project in debug mode. You can find the generated log file in your project folder. Find it now and run it. This will open another Desktop Studio instance and show you everything that was logged during the execution of the project.
 
 ![Logging](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/blob/master/img/1_Debug_Logs.png)
+
+[Go to Assignment 2](https://github.com/Innov8ion-developer/SAP_iRPA_Assignments/tree/2_Read_KVK_API_Details)
