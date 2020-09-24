@@ -14,7 +14,9 @@ In this assignment we are going to control the pages of an application. The appl
 
 First, make sure you have the SAP Fiori Launchpad open and logged in. In the Applications tab, press Add Application. If you press the refresh button in the popup window, you should be able to see the browser as an application with the SAP Fiori Launchpad in it. Select it and press Save and Capture Page. We have now captured the browser as an application. Directly after, repeat the process to add the the SAP Fiori Launchpad as a page.
 
-#### Step 4: Add recognition criteria & select tile element
+Specifically for Fiori applications, you can set SAPUI5 as the Application custom type.
+
+#### Step 4: Add recognition criteria
 Everything that gets captured in your project needs to be uniquely identified by a recognition criteria. To do this, select the application you have just added in the list on the left side of the screen. Now take a look at the bottom part of the screen. Here you will find a Captured Data window and a Criteria window. You need to select a parameter from the Captured Data window to uniquely identify the application. In this case we can click on the URL parameter to be our criteria. Repeat the process for the page you have added.
 
 #### Step 5: Add the tile element
